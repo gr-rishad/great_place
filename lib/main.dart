@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './screens/places_list_screen.dart';
 import 'package:provider/provider.dart';
 import './providers/great_places.dart';
+import './screens/add_place_screen.dart';
 
 void main() {
   runApp(
@@ -15,6 +16,9 @@ void main() {
           accentColor: Colors.amber,
         ),
         home: PlaceListScreen(),
+        routes: {
+          AddPlaceScreen.routeName: (ctx) => AddPlaceScreen(),
+        },
       ),
     ),
   );
