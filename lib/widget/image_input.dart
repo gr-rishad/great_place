@@ -68,6 +68,7 @@ class _ImageInputState extends State<ImageInput> {
               'Take Picture',
             ),
             textColor: Theme.of(context).primaryColor,
+          
           ),
         ),
       ],
